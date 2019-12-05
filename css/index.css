@@ -17,7 +17,11 @@ body{
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(4,auto);
 
-	grid-template-areas: "header header header";
+    grid-template-areas: "header header header"
+                        "contenido contenido aside"
+                        "menuanime menuanime aside"
+                        "widget1 widget2 aside"
+                        "footer footer footer";
 }
 
 .contenedor > div,
@@ -33,5 +37,7 @@ body{
 .contenedor .header{
 	background: #12203E;
 	color: white;
-	grid-area: header;
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
 } 
